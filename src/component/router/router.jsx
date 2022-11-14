@@ -21,6 +21,7 @@ function Router() {
       <>
           <Header/>
           <Switch>
+              <Route path="/" component={Main} exact/>
               <Route path="/popular" component={Main} exact/>
               <Route path="/latest" component={Latest}/>
               <Route path="/upcoming" component={Upcoming}/>

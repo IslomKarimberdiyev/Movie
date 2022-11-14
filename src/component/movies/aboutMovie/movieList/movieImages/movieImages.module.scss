@@ -1,0 +1,59 @@
+.image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 30px;
+
+  :global(.react-simple-image-viewer__modal) {
+    overflow: hidden;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  :global(.styles-module_image__2hdkJ) {
+    width: 800px;
+    height: 500px;
+  }
+
+  &__title {
+    font-size: 40px;
+    color: #FFFFFF;
+  }
+
+  &__card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+
+    &-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+
+      .item__images {
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+          transition: all .3s ease-in-out;
+          transform: scale(1.1);
+        }
+      }
+
+      .arrow {
+        color: #FFFFFF;
+        background-color: #FFFFFF;
+      }
+    }
+  }
+
+}

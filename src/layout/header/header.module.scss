@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background: #242424;
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+}

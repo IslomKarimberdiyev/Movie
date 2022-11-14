@@ -1,0 +1,27 @@
+.language {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+
+  &__item {
+    color: white;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+
+    &--active {
+      color: #BBE611;
+    }
+
+
+    &:hover {
+       transition: all .2s ease-in-out;
+       color: #BBE611;
+     }
+  }
+
+  .language__item + .language__item {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,22 @@
+.search {
+  width: 30%;
+
+  input {
+    width: 100%;
+    height: 30px;
+    padding: 10px 0  10px 10px;
+    background-color: #242424;
+    color: white;
+    border: solid #FFFFFF 1px;
+    border-radius: 10px;
+
+    &:focus-visible {
+      border: solid black 1px;
+    }
+
+  }
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration { display: none; }
+}

@@ -1,0 +1,85 @@
+.movie__recommendation {
+  padding-top: 100px;
+
+  .card {
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  &-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #FFFFFF;
+    font-size: 40px;
+  }
+
+  span {
+    font-size: 40px;
+    color: white;
+  }
+
+    .recommendation {
+      height: max-content;
+      position: relative;
+      width: 200px;
+
+      &:hover {
+
+        img {
+          transition: all .5s ease-in-out;
+          transform: scale(1.1);
+        }
+
+      }
+
+      &__vote {
+        position: absolute;
+        top: 10px;
+        left: -2px;
+        background: red;
+        color: white;
+        z-index: 5;
+        padding: 2px 12px;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+
+
+      &__image {
+        overflow: hidden;
+        width: 100%;
+        height: 300px;
+        position: relative;
+        border-radius: 10px;
+
+        img {
+          height: 100%;
+          width: 100%;
+          transform: scale(1);
+          transition: all .5s ease-in-out;
+          border-radius: 10px;
+
+        }
+      }
+      &__content {
+        display: block;
+        margin-top: 20px;
+        &-title,&-year{
+          color: white;
+          font: 400 20px/24px 'Poppins';
+        }
+        &-year {
+          margin-top: 5px;
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+}
+

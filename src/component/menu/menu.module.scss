@@ -1,0 +1,74 @@
+.menu {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 8px 0;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    font: 400 20px/20px 'Poppins';
+
+    &--active {
+      color: #BBE611;
+    }
+
+    &:hover {
+      color: #BBE611;
+      text-decoration: none;
+      transition: all .3s ease-in-out;
+
+    }
+
+    &:before, a:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      background: #BBE611;
+      transition: all .5s ease-in-out;
+    }
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      right: 0;
+      background: #BBE611;
+      transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+
+    &:hover:before {
+      background: #BBE611;
+      width: 100%;
+      transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+
+    &:hover:after {
+      background: transparent;
+      width: 100%;
+      transition: all .5s ease-in-out;
+    }
+  }
+}
+
+.menu__item + .menu__item {
+  margin-left: 100px;
+}
+
+.menu__item--active::before {
+  background: #BBE611;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu__item--active::after {
+  background: transparent;
+  width: 100%;
+  transition: all .5s ease-in-out;
+}

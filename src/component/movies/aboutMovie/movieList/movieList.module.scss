@@ -1,0 +1,118 @@
+.movies-single {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px;
+}
+
+.movie {
+  display: grid;
+  grid-template-columns: repeat(2,30% 70%);
+  width: 93%;
+
+  &__vote {
+    position: absolute;
+    top: 10px;
+    left: -2px;
+    background: red;
+    color: #FFFF;
+    z-index: 5;
+    padding: 2px 12px;
+    border-radius: 5px;
+  }
+
+
+  &__image {
+    position: relative;
+    width: 320px;
+    min-width: 320px;
+    height: 480px;
+    img {
+      border-radius: 10px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      height: 100%;
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+
+  &__information {
+    color:white;
+
+    .title__text {
+      margin-bottom: 5px;
+      font: 400 16px/16px 'Poppins';
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &-title, &-overview {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &-title {
+      margin-bottom: 30px;
+    }
+
+    &-overview {
+      margin-bottom: 30px;
+    }
+
+    &-subtitle {
+      font-size: 30px;
+    }
+
+    &-description {
+      text-align: start;
+      font-size: 20px;
+    }
+
+    &-item {
+      color: #FFFFFF;
+      margin-bottom: 30px;
+
+      .item__text {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 20px;
+
+      }
+    }
+
+    &-genres {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      .item__genres {
+        padding: 2px 10px;
+        background: red;
+        width: max-content;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .item__genres + .item__genres {
+        margin-left: 10px;
+      }
+    }
+  }
+}

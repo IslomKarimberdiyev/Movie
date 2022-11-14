@@ -1,0 +1,62 @@
+.pagination {
+  margin-top: 30px;
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+
+
+    &:hover {
+      color: red;
+      transition: all .2s ease-in-out;
+    }
+  }
+  &__arrow {
+    display: none;
+  }
+  &__text {
+    color: red;
+    opacity: 0;
+    visibility: hidden;
+  }
+  &__circle {
+    color: transparent;
+
+    &::marker {
+      display: none;
+    }
+  }
+}
+
+.active {
+  color: #FFFFFF;
+  background-color: red;
+
+  &:hover {
+    color: #FFFFFF;
+  }
+}
+
+ul {
+  display: flex;
+}
+
+.movies {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 70%;
+  margin-top: 90px;
+}

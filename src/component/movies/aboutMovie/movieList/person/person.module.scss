@@ -1,0 +1,51 @@
+.container {
+  margin-top: 80px;
+  padding: 100px;
+}
+
+.person {
+  display: grid;
+  grid-template-columns: repeat(2, 30% 70%);
+
+  &__img {
+    width: 320px;
+    height: 480px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  &__information {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: #FFFFFF;
+
+    &-name {
+      font-size: 40px;
+    }
+
+    &-item {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin-top: 30px;
+
+      span {
+        font-size: 20px;
+      }
+
+      .item__text {
+        width: 80%;
+        margin-top: 5px;
+        text-align: start;
+      }
+    }
+  }
+}
